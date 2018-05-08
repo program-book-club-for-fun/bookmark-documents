@@ -32,9 +32,7 @@
 
 ## Branch 守則
 
-參考 [git flow](http://nvie.com/posts/a-successful-git-branching-model/)，但有一些不同點：
-
-主要只有三種分支：
+在 `bookmark` 系列 repository 中，我們主要會採用 fork model 來合併改動，但我們依然會有以下三種分支：
 
 * master 分支
 * develop 分支
@@ -63,11 +61,11 @@
 
 ### issue 分支
 
-為主要開發分支。開發前要先開一個 issue，並開對應的 issue 分支 。做完 issue 並通過 review 後就可合併為 develop。這裡的 issue 分支可想成是 git flow 的 feature 分支。
+為主要開發分支。因為此專案主要是採用 fork model，所以使用 issue 分支的機率不高。如果需要使用 issue 分支時，應要先有一個對應的 issue。做完 issue 並通過 review 後即可合併進 develop。這裡的 issue 分支可想成是 git flow 的 feature 分支。
 
 應遵守的事項為：
 
-* 開分之前應該對應的 issue
+* 開分支前應該要開對應的 issue
 * 由 develop 當前的 HEAD 分出去開發
 * 只能合併回 develop
 * 命名格式：`[issue-number]-issue-name`
@@ -76,3 +74,14 @@
   - 字中間以 `-` 區隔
   - e.g： `1-Set-git-workflow-rule`
 
+
+## Pull Request 守則
+
+發 Merge Request 時請遵守以下幾點規定：
+
+- 請先開對應的 issue，或者在 Pull Request 中表明立意，以清楚表達 Pull Request 的目的
+- 有相對應的 issue 時，命名格式應為：`Resolve #[issue-number]: [issue-name]`
+  - e.g：`Resolve #1: Set git workflow rule`
+- 若 Merge Request 還需改動時，開頭應加上 `[WIP]` 以標明 Pull Request 狀態
+  - e.g：`[WIP] Resolve #1: Set git workflow rule`
+- 若有畫面改動時，請附上改動前與改動後的畫面截圖對照
