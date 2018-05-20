@@ -85,6 +85,5 @@
   - e.g：`Resolve #1: Set git workflow rule`
 - 若 Merge Request 還需改動時，開頭應加上 `[WIP]` 以標明 Pull Request 狀態
   - e.g：`[WIP] Resolve #1: Set git workflow rule`
-- 若有畫面改動時，請附上改動前與改動後的畫面截圖對照
 - Pull Request 中的 commit 應遵守上述之 Commit 守則
 - 提出 Pull Request 的 branch 應該要是一個 issue 分支，並遵守上述之 Branch 守則
