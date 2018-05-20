@@ -1,13 +1,13 @@
 # Git Workflow
 
-此文件會說明 `bookmark` 系列 repository 中應遵守的 Git 開發流程，包括：
+此文件會說明 `Bookmark` 系列 repository 中應遵守的 Git 開發流程，包括：
 
 - Commit 守則
 - Branch 守則
 
 ## Commit 守則
 
-主要有兩點說明：
+如果想貢獻到 `Bookmark` 系列的 repository，commit 時請遵守以下幾點規則：
 
 ### commit 內容
 
@@ -32,7 +32,9 @@
 
 ## Branch 守則
 
-在 `bookmark` 系列 repository 中，我們主要會採用 fork model 來合併改動，但我們依然會有以下三種分支：
+在 `Bookmark` 系列 repository 會採用 fork model 來合併改動。然而不論是直接在此系列 repository 亦或者是在 fork 出去的專案中開發，請遵守以下幾點 Branch 守則，如此流程能更為順暢，而合併後的 Commit log 也能更清楚明瞭。
+
+ `Bookmark` 系列的 repository 會有以下三種分支：
 
 - master 分支
 - develop 分支
@@ -61,7 +63,7 @@
 
 ### issue 分支
 
-為主要開發分支。因為此專案主要是採用 fork model，所以使用 issue 分支的機率不高。如果需要使用 issue 分支時，應要先有一個對應的 issue。做完 issue 並通過 review 後即可合併進 develop。這裡的 issue 分支可想成是 git flow 的 feature 分支。
+為主要開發分支。因為此專案主要是採用 fork model，所以直接在此 repository 上開 issue 分支的機會不多。如果需要使用 issue 分支時，應要先有一個對應的 issue。做完 issue 並通過 review 後即可合併進 develop。這裡的 issue 分支可想成是 git flow 的 feature 分支。
 
 應遵守的事項為：
 
@@ -84,3 +86,5 @@
 - 若 Merge Request 還需改動時，開頭應加上 `[WIP]` 以標明 Pull Request 狀態
   - e.g：`[WIP] Resolve #1: Set git workflow rule`
 - 若有畫面改動時，請附上改動前與改動後的畫面截圖對照
+- Pull Request 中的 commit 應遵守上述之 Commit 守則
+- 提出 Pull Request 的 branch 應該要是一個 issue 分支，並遵守上述之 Branch 守則
