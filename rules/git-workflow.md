@@ -78,12 +78,12 @@
 
 ## Pull Request 守則
 
-發 Merge Request 時請遵守以下幾點規定：
+發 Pull Request 時請遵守以下幾點規定：
 
 - 請先開對應的 issue，或者在 Pull Request 中表明立意，以清楚表達 Pull Request 的目的
 - 有相對應的 issue 時，命名格式應為：`Resolve #[issue-number]: [issue-name]`
   - e.g：`Resolve #1: Set git workflow rule`
-- 若 Merge Request 還需改動時，開頭應加上 `[WIP]` 以標明 Pull Request 狀態
-  - e.g：`[WIP] Resolve #1: Set git workflow rule`
+- 若 Pull Request 還需改動時，開頭應加上 `WIP` 以標明 Pull Request 狀態
+  - e.g：`WIP Resolve #1: Set git workflow rule`
 - Pull Request 中的 commit 應遵守上述之 Commit 守則
 - 提出 Pull Request 的 branch 應該要是一個 issue 分支，並遵守上述之 Branch 守則
