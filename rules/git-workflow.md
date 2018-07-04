@@ -86,4 +86,5 @@
 - 若 Pull Request 還需改動時，開頭應加上 `WIP` 以標明 Pull Request 狀態
   - e.g：`WIP Resolve #1: Set git workflow rule`
 - Pull Request 中的 commit 應遵守上述之 Commit 守則
-- 提出 Pull Request 的 branch 應該要是一個 issue 分支，並遵守上述之 Branch 守則
+- 提出 Pull Request 的 branch 會是一個 issue 分支，並應遵守上述之 Branch 守則
+- 任何分支在提出 Pull Request 前都應先 rebase 其基底分支
