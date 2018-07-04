@@ -88,3 +88,4 @@
 - Pull Request 中的 commit 應遵守上述之 Commit 守則
 - 提出 Pull Request 的 branch 會是一個 issue 分支，並應遵守上述之 Branch 守則
 - 任何分支在提出 Pull Request 前都應先 rebase 其基底分支
+- 修正 Pull Request 後，應將修正好的 commit 版號回覆於對話中
